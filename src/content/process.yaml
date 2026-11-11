@@ -1,0 +1,25 @@
+steps:
+  - title:
+      en: Call
+      id: Ngobrol
+    description:
+      en: 30 minutes to understand the goal, users and deadline. Free, no commitment.
+      id: 30 menit untuk memahami tujuan, pengguna, dan deadline. Gratis, tanpa komitmen.
+  - title:
+      en: Scope and quote
+      id: Lingkup dan penawaran
+    description:
+      en: A one-page scope with deliverables, timeline and price. You approve before any code is written.
+      id: Dokumen satu halaman berisi deliverable, timeline, dan harga. Anda setujui dulu sebelum kode ditulis.
+  - title:
+      en: Build in the open
+      id: Bangun secara terbuka
+    description:
+      en: Weekly preview links so you see progress, not promises. Changes are discussed early.
+      id: Link preview tiap minggu supaya Anda lihat progres, bukan janji. Perubahan dibahas sejak awal.
+  - title:
+      en: Launch and handover
+      id: Rilis dan serah terima
+    description:
+      en: Deployed, documented, and the source is yours. Small fixes after launch are included.
+      id: Di-deploy, didokumentasi, dan source code jadi milik Anda. Perbaikan kecil setelah rilis termasuk.

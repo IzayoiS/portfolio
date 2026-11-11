@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { ui } from '../lib/content';
+const t = ui.en;
+---
+
+<Base lang="en" title={`404 — ${t.notFound}`} description={t.notFoundText} noindex>
+  <main id="main" class="hero">
+    <div class="wrap" style="display:block">
+      <p class="label">404</p>
+      <h1>{t.notFound}</h1>
+      <p class="lead">{t.notFoundText} <span lang="id">{ui.id.notFoundText}</span></p>
+      <div class="ctas">
+        <a class="btn solid" href="/">{t.home}</a>
+        <a class="btn" href="/id/" lang="id">{ui.id.home}</a>
+      </div>
+    </div>
+  </main>
+</Base>

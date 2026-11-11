@@ -1,0 +1,30 @@
+paragraphs:
+  - en: "I build across the stack: Go and Express APIs, React and Next.js interfaces, PostgreSQL underneath. I care about code that the next person can read, and I test what I ship."
+    id: "Saya mengerjakan seluruh stack: API Go dan Express, antarmuka React dan Next.js, PostgreSQL di bawahnya. Saya peduli pada kode yang bisa dibaca orang berikutnya, dan saya uji apa yang saya kirim."
+  - en: Before web development I was an IT Support Engineer at SEAMEO SEAMOLEC, building an IoT gas-leak detector and keeping networks running. Since December 2024 I have been in an intensive fullstack program at Dumbways, shipping and deploying a new app every week.
+    id: "Sebelum web development, saya IT Support Engineer di SEAMEO SEAMOLEC: membuat detektor kebocoran gas berbasis IoT dan menjaga jaringan tetap jalan. Sejak Desember 2024 saya ikut program fullstack intensif di Dumbways, merilis dan men-deploy aplikasi baru tiap minggu."
+facts:
+  - label:
+      en: Backend
+      id: Backend
+    value: Golang, Express.js, Java
+  - label:
+      en: Frontend
+      id: Frontend
+    value: React, Next.js, TypeScript, Tailwind
+  - label:
+      en: Data
+      id: Data
+    value: PostgreSQL, Prisma
+  - label:
+      en: Testing
+      id: Testing
+    value: Vitest, React Testing Library
+  - label:
+      en: Deploy
+      id: Deploy
+    value: Vercel, Neon
+  - label:
+      en: Timezone
+      id: Zona waktu
+    value: UTC+7 · Indonesia

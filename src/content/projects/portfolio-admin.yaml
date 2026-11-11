@@ -1,0 +1,20 @@
+order: 1
+title:
+  en: Portfolio site with admin dashboard
+  id: Website portfolio dengan dashboard admin
+stack:
+  - Next.js
+  - TypeScript
+  - Tailwind
+  - Go
+problem:
+  en: Needed one place to showcase experience and projects, editable without touching code.
+  id: Butuh satu tempat untuk memajang pengalaman dan proyek, bisa diedit tanpa menyentuh kode.
+built:
+  en: Next.js + TypeScript frontend, Tailwind UI, Go API with an admin dashboard for content.
+  id: Frontend Next.js + TypeScript, UI Tailwind, API Go dengan dashboard admin untuk konten.
+result:
+  en: Live on Vercel; all content is managed from the dashboard.
+  id: Live di Vercel; semua konten diatur dari dashboard.
+repoUrl: https://github.com/IzayoiS/b59-circle-frontend
+liveUrl: https://b59-circle-frontend-sable.vercel.app/

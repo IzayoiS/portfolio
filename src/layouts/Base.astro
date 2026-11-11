@@ -1,0 +1,73 @@
+---
+import '@fontsource/space-grotesk/latin-400.css';
+import '@fontsource/space-grotesk/latin-500.css';
+import '@fontsource/space-grotesk/latin-700.css';
+import '@fontsource/space-mono/latin-400.css';
+import '../styles/global.css';
+import { homePath, LANGS, type Lang } from '../lib/content';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  image?: string;
+  jsonLd?: Record<string, unknown>;
+  noindex?: boolean;
+}
+const { lang, title, description, image, jsonLd, noindex } = Astro.props;
+const site = Astro.site!;
+const canonical = new URL(homePath(lang), site).href;
+---
+
+<!doctype html>
+<html lang={lang} class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141513" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {noindex && <meta name="robots" content="noindex" />}
+    {
+      !noindex && (
+        <>
+          <link rel="canonical" href={canonical} />
+          {LANGS.map((l) => (
+            <link rel="alternate" hreflang={l} href={new URL(homePath(l), site).href} />
+          ))}
+          <link rel="alternate" hreflang="x-default" href={new URL('/', site).href} />
+          <link rel="sitemap" href="/sitemap-index.xml" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta property="og:url" content={canonical} />
+          <meta property="og:locale" content={lang === 'id' ? 'id_ID' : 'en_US'} />
+          {image && <meta property="og:image" content={new URL(image, site).href} />}
+          <meta name="twitter:card" content="summary" />
+        </>
+      )
+    }
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <script is:inline>
+      const r = document.documentElement;
+      r.dataset.theme =
+        localStorage.getItem('theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      r.classList.remove('no-js');
+      function toggleTheme() {
+        const f = () => {
+          r.dataset.theme = r.dataset.theme === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', r.dataset.theme);
+        };
+        document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches
+          ? document.startViewTransition(f)
+          : f();
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

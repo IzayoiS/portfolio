@@ -1,0 +1,18 @@
+order: 2
+title:
+  en: Todo app with user accounts
+  id: Aplikasi todo dengan akun pengguna
+stack:
+  - React
+  - Express
+  - PostgreSQL
+  - Prisma
+problem:
+  en: Full CRUD with registration and login, per-user data.
+  id: CRUD lengkap dengan registrasi dan login, data per pengguna.
+built:
+  en: React frontend, Express REST API, PostgreSQL via Prisma, session-based auth.
+  id: Frontend React, REST API Express, PostgreSQL lewat Prisma, autentikasi berbasis sesi.
+result:
+  en: In progress — demo link coming soon.
+  id: Sedang dikerjakan — link demo segera.

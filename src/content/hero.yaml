@@ -1,0 +1,35 @@
+available: true
+status:
+  en: Taking new projects
+  id: Menerima proyek baru
+title:
+  en: Websites and web apps that *just work* for your business.
+  id: Website dan aplikasi web yang *benar-benar jalan* untuk bisnis Anda.
+lead:
+  en: >-
+    I'm Iqbal, a freelance fullstack developer in Indonesia. From landing pages
+    to dashboards: built with Next.js, Go and PostgreSQL, tested, and handed
+    over clean.
+  id: >-
+    Saya Iqbal, freelance fullstack developer di Indonesia. Dari landing page
+    sampai dashboard: dibangun dengan Next.js, Go dan PostgreSQL, diuji, dan
+    diserahkan rapi.
+proof:
+  - value:
+      en: UTC+7
+      id: UTC+7
+    text:
+      en: Indonesia, overlaps with EU mornings and US evenings
+      id: Indonesia, bisa menyesuaikan jam klien luar
+  - value:
+      en: EN / ID
+      id: EN / ID
+    text:
+      en: Works in English and Indonesian
+      id: Bisa berbahasa Inggris dan Indonesia
+  - value:
+      en: 1 day
+      id: 1 hari
+    text:
+      en: Reply time for new inquiries
+      id: Waktu balas untuk pertanyaan baru

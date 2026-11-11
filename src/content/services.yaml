@@ -1,0 +1,46 @@
+intro:
+  en: Fixed scope, clear timeline, one point of contact. Quotes are per project after a short call.
+  id: Lingkup jelas, timeline jelas, satu kontak. Penawaran per proyek setelah ngobrol singkat.
+items:
+  - icon: screen
+    title:
+      en: Landing page
+      id: Landing page
+    description:
+      en: A fast, mobile-first page for your product, campaign or business profile.
+      id: Halaman cepat, mobile-first untuk produk, kampanye, atau profil bisnis Anda.
+    bullets:
+      - en: Next.js + Tailwind
+        id: Next.js + Tailwind
+      - en: SEO and share previews set up
+        id: SEO dan preview share disiapkan
+      - en: Contact form or WhatsApp CTA
+        id: Form kontak atau tombol WhatsApp
+  - icon: dashboard
+    title:
+      en: Web app and dashboard
+      id: Aplikasi web dan dashboard
+    description:
+      en: Login, roles, CRUD, reports — the internal tool your spreadsheet has outgrown.
+      id: Login, role, CRUD, laporan — tool internal pengganti spreadsheet yang sudah kewalahan.
+    bullets:
+      - en: React / Next.js frontend
+        id: Frontend React / Next.js
+      - en: Go or Express API, PostgreSQL
+        id: API Go atau Express, PostgreSQL
+      - en: Tested with Vitest
+        id: Diuji dengan Vitest
+  - icon: globe
+    title:
+      en: API and integrations
+      id: API dan integrasi
+    description:
+      en: A clean REST API or a bridge between the tools you already use.
+      id: REST API yang rapi atau penghubung antar tool yang sudah Anda pakai.
+    bullets:
+      - en: Go or Express
+        id: Go atau Express
+      - en: PostgreSQL + Prisma
+        id: PostgreSQL + Prisma
+      - en: Deployed on Vercel / Neon
+        id: Deploy ke Vercel / Neon
