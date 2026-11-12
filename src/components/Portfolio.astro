@@ -53,9 +53,9 @@ const jsonLd = {
   jsonLd={jsonLd}
 >
   <a class="skip" href="#main">{t.skip}</a>
-  <header class="top" id="top">
+  <header class="top">
     <div class="wrap">
-      <a class="brand" href="#top"><i aria-hidden="true"></i>{profile.shortName}</a>
+      <a class="brand" href="#"><i aria-hidden="true"></i>{profile.shortName}</a>
       <nav class="topnav" aria-label="Primary">
         {sections.map((s) => <a href={`#${s.id}`}>{t.nav[s.id]}</a>)}
       </nav>
@@ -284,7 +284,7 @@ const jsonLd = {
   <footer class="foot">
     <div class="wrap">
       <p>© {new Date().getFullYear()} {profile.name}</p>
-      <a href="#top"
+      <a href="#"
         >{t.backTop}<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
           ><path d="M12 19V5M6 11l6-6 6 6"></path></svg
         ></a
